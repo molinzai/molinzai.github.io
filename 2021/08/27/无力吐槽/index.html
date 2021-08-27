@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://molinzai.github.io">
-  <title>Molinzai&#39;s Blog</title>
+  <title>无力吐槽 | Molinzai&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Molinzai&#39;s Blog">
-<meta property="og:url" content="http://molinzai.github.io/page/5/index.html">
+  <meta name="description" content="Blog出故障啦。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="无力吐槽">
+<meta property="og:url" content="http://molinzai.github.io/2021/08/27/%E6%97%A0%E5%8A%9B%E5%90%90%E6%A7%BD/index.html">
 <meta property="og:site_name" content="Molinzai&#39;s Blog">
+<meta property="og:description" content="Blog出故障啦。">
 <meta property="og:locale">
+<meta property="article:published_time" content="2021-08-27T01:28:47.100Z">
+<meta property="article:modified_time" content="2021-08-27T01:28:47.158Z">
 <meta property="article:author" content="Molinzai">
+<meta property="article:tag" content="碎碎念">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Molinzai&#39;s Blog" type="application/atom+xml">
@@ -142,23 +147,21 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-Blog主题优化（五）"
-  class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-无力吐槽"
+  class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/05/07/Blog%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%EF%BC%88%E4%BA%94%EF%BC%89/">Blog主题优化（五）</a>
+    <h1 class="article-title" itemprop="name">
+      无力吐槽
     </h1>
   
 
           
-            <a href="/2021/05/07/Blog%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%EF%BC%88%E4%BA%94%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2021-05-07T00:45:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-07</time>
+            <a href="/2021/08/27/%E6%97%A0%E5%8A%9B%E5%90%90%E6%A7%BD/" class="archive-article-date">
+  	<time datetime="2021-08-27T01:28:47.100Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-27</time>
 </a>
               <!-- 需要添加的位置 -->
               <!-- 开始添加字数统计-->
@@ -168,7 +171,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">185字</span>
+        <span class="post-count">341字</span>
       </span>
     </span>
 
@@ -188,110 +191,21 @@
       
         <div class="article-entry" itemprop="articleBody">
           
-            <blockquote>
-<p>本文针对hexo博客文章添加图片的功能</p>
+                    <blockquote>
+<p>Blog出故障啦。</p>
 </blockquote>
-              
-                  
-
-                        
-        </div>
-        <div class="article-info article-info-index">
-          
-              
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Blog</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-                
-
-                  
-                    <p class="article-more-link">
-                      <a class="article-more-a" href="/2021/05/07/Blog%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%EF%BC%88%E4%BA%94%EF%BC%89/">
-                        展开全文 >>
-                      </a>
-                    </p>
-                    
+<span id="more"></span>
+<p>突然某天博客怎么都部署不上去，换了第二天也是。往常部署出错都是关闭刷新就好了，这次怎么都不行。</p>
+<p>根据<code>Git Bash Here</code>的提示按图索骥寻找网上的教程。</p>
+<blockquote>
+<p>问题描述：<br>先是出现错误：<br><code>error：spawn failed...</code><br>然后经过一些博客的操作会出现以下问题：<br><code>fatal: cannot lock ref &#39;HEAD&#39;: unable to resolve reference HEAD: Invalid argument error: src refspec</code><br>或者：<br><code>error: src refspec HEAD does not match any</code>等等<br>总结一下：<br>问题大多是因为<code>git</code>进行<code>push</code>或者<code>hexo d</code>的时候改变了一些<code>.deploy_git</code>文件下的内容。</p>
+<p>解决办法：<br>删除<code>.deploy_git</code>文件夹;<br>输入<code>git config --global core.autocrlf false</code><br>然后，依次执行：<br><code>hexo clean</code><br><code>hexo g</code><br><code>hexo d</code></p>
+</blockquote>
+<p>巧了，<code>.deploy_git</code>这个文件夹怎么都不能删除，用了<code>delete</code>，<code>shift+delete</code>，<code>cmd+del</code>，<code>安全软件删除</code>，<code>安全模式下删除</code>，<code>结束explorer.exe任务+cmd+del</code>种种方式就是不能删除，过程发现是<code>.deploy_git-.git-d2</code>文件损坏。</p>
+<p>后面尝试修复文件，用了磁盘检查选项，但是不尽人意。最后<code>cmd+chkdsk E: /f</code>修复了文件，部署时直接提示<code>.deploy_git-.git-d2</code>有问题，最后按照引文的解决方法解决了这个困扰我将近一个月的部署问题。</p>
+<p><strong>资料</strong>：<a target="_blank" rel="noopener" href="https://blog.csdn.net/HTL2018/article/details/106876940">hexo发生error：spawn failed错误的解决方法</a></p>
 
                       
-                            <div class="clearfix"></div>
-        </div>
-  </div>
-</article>
-
-      <aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-        
-  
-    <article id="post-四月总结"
-  class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/05/06/%E5%9B%9B%E6%9C%88%E6%80%BB%E7%BB%93/">四月总结</a>
-    </h1>
-  
-
-          
-            <a href="/2021/05/06/%E5%9B%9B%E6%9C%88%E6%80%BB%E7%BB%93/" class="archive-article-date">
-  	<time datetime="2021-05-06T08:09:25.041Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-06</time>
-</a>
-              <!-- 需要添加的位置 -->
-              <!-- 开始添加字数统计-->
-              
-                <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">6字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">1分</span>
-      </span>
-    </span>
-</div>
-                  
-                    <!-- 添加完成 -->
-                    
-      </header>
-      
-        <div class="article-entry" itemprop="articleBody">
-          
-            Here's something encrypted, password is required to continue reading.
-              
-                  
 
                         
         </div>
@@ -312,19 +226,76 @@
                 
 
                   
-                    <p class="article-more-link">
-                      <a class="article-more-a" href="/2021/05/06/%E5%9B%9B%E6%9C%88%E6%80%BB%E7%BB%93/">
-                        展开全文 >>
-                      </a>
-                    </p>
-                    
 
                       
+                        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://molinzai.github.io/2021/08/27/%E6%97%A0%E5%8A%9B%E5%90%90%E6%A7%BD/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+                          
                             <div class="clearfix"></div>
         </div>
   </div>
 </article>
 
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2021/08/19/miR-520f-3p%E2%86%92SOX9%EF%BC%8CWnt%CE%B2-catenin%E2%86%92%E8%82%BF%E7%98%A4%E5%A2%9E%E6%AE%96%E2%86%92%E8%83%83%E7%99%8C/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">miR-520f-3p→SOX9，Wnt/β-catenin→肿瘤增殖→胃癌</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+    
       <aside class="wrap-side-operation">
     <div class="mod-side-operation">
         
@@ -338,830 +309,34 @@
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
 
         
-  
-    <article id="post-五一假期"
-  class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/05/04/%E4%BA%94%E4%B8%80%E5%81%87%E6%9C%9F/">五一假期</a>
-    </h1>
-  
-
           
-            <a href="/2021/05/04/%E4%BA%94%E4%B8%80%E5%81%87%E6%9C%9F/" class="archive-article-date">
-  	<time datetime="2021-05-04T12:35:30.445Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-04</time>
-</a>
-              <!-- 需要添加的位置 -->
-              <!-- 开始添加字数统计-->
-              
-                <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">642字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">2分</span>
-      </span>
-    </span>
-</div>
-                  
-                    <!-- 添加完成 -->
-                    
-      </header>
-      
-        <div class="article-entry" itemprop="articleBody">
-          
-            <blockquote>
-<p>五一假期结束了。</p>
-</blockquote>
-<p><img src="/2021/05/04/%E4%BA%94%E4%B8%80%E5%81%87%E6%9C%9F/1.jpg" alt="1" style="zoom:50%;"></p>
-              
-                  
-
-                        
-        </div>
-        <div class="article-info article-info-index">
-          
-              
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">碎碎念</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
                 
 
-                  
-                    <p class="article-more-link">
-                      <a class="article-more-a" href="/2021/05/04/%E4%BA%94%E4%B8%80%E5%81%87%E6%9C%9F/">
-                        展开全文 >>
-                      </a>
-                    </p>
-                    
-
                       
-                            <div class="clearfix"></div>
-        </div>
-  </div>
-</article>
 
-      <aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
+                            
 
-
-        
-  
-    <article id="post-倏尔十年"
-  class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/04/19/%E5%80%8F%E5%B0%94%E5%8D%81%E5%B9%B4/">倏尔十年</a>
-    </h1>
-  
-
-          
-            <a href="/2021/04/19/%E5%80%8F%E5%B0%94%E5%8D%81%E5%B9%B4/" class="archive-article-date">
-  	<time datetime="2021-04-19T08:19:22.116Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-19</time>
-</a>
-              <!-- 需要添加的位置 -->
-              <!-- 开始添加字数统计-->
-              
-                <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">6字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">1分</span>
-      </span>
-    </span>
-</div>
-                  
-                    <!-- 添加完成 -->
-                    
-      </header>
-      
-        <div class="article-entry" itemprop="articleBody">
-          
-            Here's something encrypted, password is required to continue reading.
-              
-                  
-
-                        
-        </div>
-        <div class="article-info article-info-index">
-          
-              
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">碎碎念</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-                
-
-                  
-                    <p class="article-more-link">
-                      <a class="article-more-a" href="/2021/04/19/%E5%80%8F%E5%B0%94%E5%8D%81%E5%B9%B4/">
-                        展开全文 >>
-                      </a>
-                    </p>
-                    
-
-                      
-                            <div class="clearfix"></div>
-        </div>
-  </div>
-</article>
-
-      <aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-        
-  
-    <article id="post-Blog主题优化（四）"
-  class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/04/14/Blog%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%EF%BC%88%E5%9B%9B%EF%BC%89/">Blog主题优化（四）</a>
-    </h1>
-  
-
-          
-            <a href="/2021/04/14/Blog%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%EF%BC%88%E5%9B%9B%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2021-04-14T02:01:11.785Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-14</time>
-</a>
-              <!-- 需要添加的位置 -->
-              <!-- 开始添加字数统计-->
-              
-                <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">404字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">1分</span>
-      </span>
-    </span>
-</div>
-                  
-                    <!-- 添加完成 -->
-                    
-      </header>
-      
-        <div class="article-entry" itemprop="articleBody">
-          
-            <blockquote>
-<p>本文主要针对yilia主题添加”Latex数学公式“支持功能。</p>
-</blockquote>
-              
-                  
-
-                        
-        </div>
-        <div class="article-info article-info-index">
-          
-              
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Blog</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-                
-
-                  
-                    <p class="article-more-link">
-                      <a class="article-more-a" href="/2021/04/14/Blog%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%EF%BC%88%E5%9B%9B%EF%BC%89/">
-                        展开全文 >>
-                      </a>
-                    </p>
-                    
-
-                      
-                            <div class="clearfix"></div>
-        </div>
-  </div>
-</article>
-
-      <aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-        
-  
-    <article id="post-Blog主题优化（三）"
-  class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/04/12/Blog%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%EF%BC%88%E4%B8%89%EF%BC%89/">Blog主题优化（三）</a>
-    </h1>
-  
-
-          
-            <a href="/2021/04/12/Blog%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%EF%BC%88%E4%B8%89%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2021-04-12T10:04:55.112Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-12</time>
-</a>
-              <!-- 需要添加的位置 -->
-              <!-- 开始添加字数统计-->
-              
-                <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">145字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">1分</span>
-      </span>
-    </span>
-</div>
-                  
-                    <!-- 添加完成 -->
-                    
-      </header>
-      
-        <div class="article-entry" itemprop="articleBody">
-          
-            <blockquote>
-<p>本文主要针对yilia主题添加“文档加密”功能。</p>
-</blockquote>
-              
-                  
-
-                        
-        </div>
-        <div class="article-info article-info-index">
-          
-              
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Blog</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-                
-
-                  
-                    <p class="article-more-link">
-                      <a class="article-more-a" href="/2021/04/12/Blog%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%EF%BC%88%E4%B8%89%EF%BC%89/">
-                        展开全文 >>
-                      </a>
-                    </p>
-                    
-
-                      
-                            <div class="clearfix"></div>
-        </div>
-  </div>
-</article>
-
-      <aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-        
-  
-    <article id="post-好肉麻"
-  class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/04/11/%E5%A5%BD%E8%82%89%E9%BA%BB/">好肉麻</a>
-    </h1>
-  
-
-          
-            <a href="/2021/04/11/%E5%A5%BD%E8%82%89%E9%BA%BB/" class="archive-article-date">
-  	<time datetime="2021-04-11T07:30:53.844Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-11</time>
-</a>
-              <!-- 需要添加的位置 -->
-              <!-- 开始添加字数统计-->
-              
-                <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">31字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">1分</span>
-      </span>
-    </span>
-</div>
-                  
-                    <!-- 添加完成 -->
-                    
-      </header>
-      
-        <div class="article-entry" itemprop="articleBody">
-          
-            <blockquote>
-<p>好肉麻</p>
-</blockquote>
-              
-                  
-
-                        
-        </div>
-        <div class="article-info article-info-index">
-          
-              
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">碎碎念</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-                
-
-                  
-                    <p class="article-more-link">
-                      <a class="article-more-a" href="/2021/04/11/%E5%A5%BD%E8%82%89%E9%BA%BB/">
-                        展开全文 >>
-                      </a>
-                    </p>
-                    
-
-                      
-                            <div class="clearfix"></div>
-        </div>
-  </div>
-</article>
-
-      <aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-        
-  
-    <article id="post-13.理解复数的乘法是怎样实现的"
-  class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/04/06/13.%E7%90%86%E8%A7%A3%E5%A4%8D%E6%95%B0%E7%9A%84%E4%B9%98%E6%B3%95%E6%98%AF%E6%80%8E%E6%A0%B7%E5%AE%9E%E7%8E%B0%E7%9A%84/">十三、理解复数的乘法是怎样实现的</a>
-    </h1>
-  
-
-          
-            <a href="/2021/04/06/13.%E7%90%86%E8%A7%A3%E5%A4%8D%E6%95%B0%E7%9A%84%E4%B9%98%E6%B3%95%E6%98%AF%E6%80%8E%E6%A0%B7%E5%AE%9E%E7%8E%B0%E7%9A%84/" class="archive-article-date">
-  	<time datetime="2021-04-06T07:17:37.445Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-06</time>
-</a>
-              <!-- 需要添加的位置 -->
-              <!-- 开始添加字数统计-->
-              
-                <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">1.7k字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">5分</span>
-      </span>
-    </span>
-</div>
-                  
-                    <!-- 添加完成 -->
-                    
-      </header>
-      
-        <div class="article-entry" itemprop="articleBody">
-          
-            <blockquote>
-<p><a target="_blank" rel="noopener" href="https://betterexplained.com/">https://betterexplained.com/</a>这是个非常优秀的网站，对数学的直观理解有很大帮助。</p>
-<p>本文是译文，但是网址我已经找不到了。</p>
-<p>原文链接：<a target="_blank" rel="noopener" href="https://betterexplained.com/articles/understanding-why-complex-multiplication-works/">Understanding Why Complex Multiplication Works</a>。</p>
-</blockquote>
-              
-                  
-
-                        
-        </div>
-        <div class="article-info article-info-index">
-          
-              
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">mathematics</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-                
-
-                  
-                    <p class="article-more-link">
-                      <a class="article-more-a" href="/2021/04/06/13.%E7%90%86%E8%A7%A3%E5%A4%8D%E6%95%B0%E7%9A%84%E4%B9%98%E6%B3%95%E6%98%AF%E6%80%8E%E6%A0%B7%E5%AE%9E%E7%8E%B0%E7%9A%84/">
-                        展开全文 >>
-                      </a>
-                    </p>
-                    
-
-                      
-                            <div class="clearfix"></div>
-        </div>
-  </div>
-</article>
-
-      <aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-        
-  
-    <article id="post-12.微积分导论"
-  class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/04/06/12.%E5%BE%AE%E7%A7%AF%E5%88%86%E5%AF%BC%E8%AE%BA/">十二、微积分导论</a>
-    </h1>
-  
-
-          
-            <a href="/2021/04/06/12.%E5%BE%AE%E7%A7%AF%E5%88%86%E5%AF%BC%E8%AE%BA/" class="archive-article-date">
-  	<time datetime="2021-04-06T07:14:30.197Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-06</time>
-</a>
-              <!-- 需要添加的位置 -->
-              <!-- 开始添加字数统计-->
-              
-                <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">2.2k字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">7分</span>
-      </span>
-    </span>
-</div>
-                  
-                    <!-- 添加完成 -->
-                    
-      </header>
-      
-        <div class="article-entry" itemprop="articleBody">
-          
-            <blockquote>
-<p>本文是译文，但是网址我已经找不到了。</p>
-<p>原文链接：<a target="_blank" rel="noopener" href="https://betterexplained.com/articles/a-gentle-introduction-to-learning-calculus/">A Gentle Introduction To Learning Calculus</a>。</p>
-</blockquote>
-              
-                  
-
-                        
-        </div>
-        <div class="article-info article-info-index">
-          
-              
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">mathematics</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-                
-
-                  
-                    <p class="article-more-link">
-                      <a class="article-more-a" href="/2021/04/06/12.%E5%BE%AE%E7%A7%AF%E5%88%86%E5%AF%BC%E8%AE%BA/">
-                        展开全文 >>
-                      </a>
-                    </p>
-                    
-
-                      
-                            <div class="clearfix"></div>
-        </div>
-  </div>
-</article>
-
-      <aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-        
-  
-    <article id="post-11.欧拉公式"
-  class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/04/06/11.%E6%AC%A7%E6%8B%89%E5%85%AC%E5%BC%8F/">十一、欧拉公式</a>
-    </h1>
-  
-
-          
-            <a href="/2021/04/06/11.%E6%AC%A7%E6%8B%89%E5%85%AC%E5%BC%8F/" class="archive-article-date">
-  	<time datetime="2021-04-06T07:11:30.459Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-06</time>
-</a>
-              <!-- 需要添加的位置 -->
-              <!-- 开始添加字数统计-->
-              
-                <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">3.6k字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">13分</span>
-      </span>
-    </span>
-</div>
-                  
-                    <!-- 添加完成 -->
-                    
-      </header>
-      
-        <div class="article-entry" itemprop="articleBody">
-          
-            <blockquote>
-<p>本文是译文，但是网址我已经找不到了。</p>
-<p>原文链接：<a target="_blank" rel="noopener" href="https://betterexplained.com/articles/intuitive-understanding-of-eulers-formula/">Intuitive Understanding Of Euler’s Formula</a>。</p>
-</blockquote>
-              
-                  
-
-                        
-        </div>
-        <div class="article-info article-info-index">
-          
-              
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">mathematics</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-                
-
-                  
-                    <p class="article-more-link">
-                      <a class="article-more-a" href="/2021/04/06/11.%E6%AC%A7%E6%8B%89%E5%85%AC%E5%BC%8F/">
-                        展开全文 >>
-                      </a>
-                    </p>
-                    
-
-                      
-                            <div class="clearfix"></div>
-        </div>
-  </div>
-</article>
-
-      <aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-        
-  
-  
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/4/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/6/">Next &amp;raquo;</a>
-    </nav>
-  
-
-
+                                
+                                      
           </div>
         </div>
       </div>
@@ -1187,8 +362,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
