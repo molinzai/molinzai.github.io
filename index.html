@@ -144,6 +144,325 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Cre-loxP系统介绍及使用问题"
+  class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/">Cre-loxP系统介绍及使用问题</a>
+    </h1>
+  
+
+          
+            <a href="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/" class="archive-article-date">
+  	<time datetime="2021-09-22T00:26:43.837Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-22</time>
+</a>
+              <!-- 需要添加的位置 -->
+              <!-- 开始添加字数统计-->
+              
+                <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">2.5k字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">9分</span>
+      </span>
+    </span>
+</div>
+                  
+                    <!-- 添加完成 -->
+                    
+      </header>
+      
+        <div class="article-entry" itemprop="articleBody">
+          
+                    <h3 id="一、Cre-loxP系统及应用介绍"><a href="#一、Cre-loxP系统及应用介绍" class="headerlink" title="一、Cre-loxP系统及应用介绍"></a>一、Cre-loxP系统及应用介绍</h3><h4 id="1-1-Cre-loxP系统："><a href="#1-1-Cre-loxP系统：" class="headerlink" title="1.1 Cre-loxP系统："></a>1.1 Cre-loxP系统：</h4><ul>
+<li><p>源于P1噬菌体的高效重组系统。</p>
+</li>
+<li><p>Cre（<strong>C</strong>auses  <strong>re</strong>combination；<strong>C</strong>yclization <strong>re</strong>combinase）</p>
+<p>38KD的位点特异性酶，可催化两个loxp位点间的重组。</p>
+</li>
+<li><p>LoxP（<strong>l</strong>ocus <strong>o</strong>f <strong>X</strong>(cross)-over in <strong>P</strong>1）sites</p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/LoxP位点.png" alt="LoxP位点"></p>
+<p>34个碱基的一段DNA序列；两段是回文序列，中间是核心序列。</p>
+<p>核心序列不是不回结构，因此具有方向性，即核心序列决定LoxP的方向性。</p>
+<p>LoxP有34个碱基，长度长，不宜产生相同序列。自然界生物中很少有相同序列；在操作时不会产生非目的序列的重组。</p>
+</li>
+</ul>
+<h5 id="1-1-1-Cre介导的重组反应：删除"><a href="#1-1-1-Cre介导的重组反应：删除" class="headerlink" title="1.1.1 Cre介导的重组反应：删除"></a>1.1.1 Cre介导的重组反应：删除</h5><p><strong>同一染色体的同向loxP位点：一次性作用的不可逆的删除。</strong></p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/删除.png" alt="删除"></p>
+<p>当同一条染色体的两个loxP位点呈现为同向的结构，导致两个位点的中间序列环化，环化后导致染色体中间缺失序列，缺失序列在细胞内呈现环状结构，但是无法复制，最终会被降解，从而实现中间序列的敲除。这个删除是一次性的，几乎不可逆，虽然有可能重新恢复，但是可能性极低。</p>
+<h5 id="1-1-2-Cre介导的重组反应：倒转和易位"><a href="#1-1-2-Cre介导的重组反应：倒转和易位" class="headerlink" title="1.1.2 Cre介导的重组反应：倒转和易位"></a>1.1.2 Cre介导的重组反应：倒转和易位</h5><p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/倒转和易位.png" alt="倒转和易位"></p>
+<p>当同一条染色体的两个loxP位点方向相反时，会使中间序列倒转；倒转后，loxP位点还是反向的结构，可以不断的颠倒。</p>
+<p>当两条loxP位点位于两条不同的染色体时，可以导致染色体易位。</p>
+<h5 id="1-1-3-lox多种突变类型，多种突变类型之间不交叉识别。"><a href="#1-1-3-lox多种突变类型，多种突变类型之间不交叉识别。" class="headerlink" title="1.1.3 lox多种突变类型，多种突变类型之间不交叉识别。"></a>1.1.3 lox多种突变类型，多种突变类型之间不交叉识别。</h5><p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/lox类型.png" alt="lox类型"></p>
+<p>Cre识别不同类型lox位点时，优先识别相同lox位点；不同lox位点之间有些不可以发生重组，有些是有概率发生重组的。</p>
+<p>常用的loxP、lox5171、lox2272是不能发生重组；lox71和lox66之间可以发生部分重组。</p>
+<h4 id="1-2-Cre介导的重组反应：删除"><a href="#1-2-Cre介导的重组反应：删除" class="headerlink" title="1.2 Cre介导的重组反应：删除"></a>1.2 Cre介导的重组反应：删除</h4><p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/fl小鼠.png" alt="fl小鼠"></p>
+<blockquote>
+<p>Cell Metabolism 18, July 2,2013</p>
+</blockquote>
+<p><strong>条件性敲除，条件性表达。</strong></p>
+<p>条件性敲除需要两种小鼠，一种小鼠是在需要敲除的目的基因的左右分别加同向的lox位点，称之为flox小鼠（为<strong>f</strong>lanking/<strong>f</strong>lanked by <strong>Lox</strong>P的缩写）；另外还需要cre小鼠，cre前面是特异性启动子，特异性启动子有可能是组织特异性，也有可能是细胞类型特异性。Cre在哪个组织或者细胞类型的表达决定了目的基因在哪些组织或者细胞类型被剔除。</p>
+<p>条件性过表达，往往在目的基因前面加“loxP-STOP-loxP”序列，STOP序列导致转录或翻译的中止，中止后目的基因不会被表达；而与cre小鼠交配后，目的基因前面的STOP基因序列会被删除，则目的基因进行表达。</p>
+<h5 id="1-2-1-案例1：Cre-loxP系统删除作用，介导的组织特异性敲除"><a href="#1-2-1-案例1：Cre-loxP系统删除作用，介导的组织特异性敲除" class="headerlink" title="1.2.1 案例1：Cre-loxP系统删除作用，介导的组织特异性敲除"></a>1.2.1 案例1：Cre-loxP系统删除作用，介导的组织特异性敲除</h5><p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/案例1.png" alt="案例1"></p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/案例1-2.png" alt="案例1-2"></p>
+<p><strong>组织特异性敲除</strong>：交配两代。</p>
+<blockquote>
+<p>Alb-Cre是肝脏特异性Cre。</p>
+</blockquote>
+<h5 id="1-2-2-案例2：Cre-loxP系统删除作用：介导的组织特异性表达"><a href="#1-2-2-案例2：Cre-loxP系统删除作用：介导的组织特异性表达" class="headerlink" title="1.2.2 案例2：Cre-loxP系统删除作用：介导的组织特异性表达"></a>1.2.2 案例2：Cre-loxP系统删除作用：介导的组织特异性表达</h5><p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/案例2.png" alt="案例2"></p>
+<p><strong>组织特异性表达</strong>：交配一代。</p>
+<h5 id="1-2-3-Cre-loxP系统删除作用：介导的组织特异性表达"><a href="#1-2-3-Cre-loxP系统删除作用：介导的组织特异性表达" class="headerlink" title="1.2.3 Cre-loxP系统删除作用：介导的组织特异性表达"></a>1.2.3 Cre-loxP系统删除作用：介导的组织特异性表达</h5><p>Safe harbor敲入：Rosa26，H11位点</p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/safe harbor.png" alt="safe harbor"></p>
+<p>内源基因STOP敲入:</p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/Kras locus.png" alt="Kras locus"></p>
+<blockquote>
+<p>GENES &amp; DEVELOPMENT 15:3243-3248</p>
+</blockquote>
+<p>Gene：编码基因，非编码基因，shRNA，CircRNA……</p>
+<p>STOP：poly A，编码基因……</p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/荧光蛋白1.png" alt="荧光蛋白1"></p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/荧光蛋白2.png" alt="荧光蛋白2"></p>
+<p>当cre不发挥作用，表达红色荧光；当cre作用在lox2272，表达黄色荧光；当cre作用在loxP，表达蓝色荧光。</p>
+<blockquote>
+<p>Nature, Vol 450,2007,doi:10.1038/nature06293</p>
+</blockquote>
+<h4 id="1-3-Cre-loxp系统倒转作用"><a href="#1-3-Cre-loxp系统倒转作用" class="headerlink" title="1.3 Cre-loxp系统倒转作用"></a>1.3 Cre-loxp系统倒转作用</h4><p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/倒转.png" alt="倒转"></p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/倒转案例1.png" alt="倒转案例1"></p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/倒转案例1-1.png" alt="倒转案例1-1"></p>
+<blockquote>
+<p>Nature，Vol 450,2007,doi:10.1038/nature06293</p>
+</blockquote>
+<h4 id="1-4-Cre-loxP系统易位作用"><a href="#1-4-Cre-loxP系统易位作用" class="headerlink" title="1.4 Cre-loxP系统易位作用"></a>1.4 Cre-loxP系统易位作用</h4><p><strong>模拟体内染色体易位</strong></p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/易位1.png" alt="易位1"></p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/易位1-1.png" alt="易位1-1"></p>
+<p>在白血病人中经常发现Af9（位于4号染色体）与MII（位于9号染色体）基因发生易位，导致急性淋巴白血病。</p>
+<p>作者首先在9号染色体MII基因Exon10后面打上loxP，在4号染色体Af9基因Exon9前打上loxP，使这两个位点的序列进行易位，最后与Lmo2-Cre小鼠（Lmo2-Cre为造血干细胞Cre）进行交配。</p>
+<blockquote>
+<p>EMBO J.2005 Sep 7;24(17):3136-3146.</p>
+</blockquote>
+<h4 id="1-5-可诱导的Cre重组酶：时空特异性"><a href="#1-5-可诱导的Cre重组酶：时空特异性" class="headerlink" title="1.5 可诱导的Cre重组酶：时空特异性"></a>1.5 可诱导的Cre重组酶：时空特异性</h4><p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/Cre-ER.png" alt="Cre-ER"></p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/Cre-ER2.png" alt="Cre-ER2"></p>
+<p>本来Cre是在细胞核，但是CreERᵀ²会被Hsp90在细胞质中拽住，不让其入核。当给小鼠他莫昔芬时，他莫昔芬在体内会被代谢成4-羟基-他莫昔芬；4-羟基-他莫昔芬会与CreERᵀ²结合，结合后CreERᵀ²会与Hsp90解离入核发挥Cre作用。</p>
+<p>时间特异性调控：</p>
+<p>Tamoxifen诱导前，CreERᵀ²定位于胞质中，无Cre活性；</p>
+<p>Tamoxifen诱导后，CreERᵀ²入核，敲除目的片段。</p>
+<h3 id="二、Cre小鼠使用过程中的问题"><a href="#二、Cre小鼠使用过程中的问题" class="headerlink" title="二、Cre小鼠使用过程中的问题"></a>二、Cre小鼠使用过程中的问题</h3><ul>
+<li><strong>Cre品系的评价</strong></li>
+<li><strong>重组效率</strong></li>
+<li><strong>表达特异性</strong></li>
+<li><strong>漏表达情况</strong></li>
+</ul>
+<h4 id="2-1-新的Cre品系验证"><a href="#2-1-新的Cre品系验证" class="headerlink" title="2.1 新的Cre品系验证"></a>2.1 新的Cre品系验证</h4><p><strong>新的Cre品系需要做的四件事：</strong></p>
+<ul>
+<li><p>了解小鼠的来源、背景信息以及发表的文章；</p>
+</li>
+<li><p>建立基因型鉴定方法，确认小鼠正确；</p>
+</li>
+<li><p>验证Cre在目标组织的表达；</p>
+</li>
+<li><p>验证Cre的敲除效率。</p>
+</li>
+</ul>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/新的Cre品系验证.png" alt="新的Cre品系验证"></p>
+<blockquote>
+<p>Cell Metabolism 18，July 2，2013</p>
+</blockquote>
+<h5 id="了解小鼠的来源、背景信息以及发表的文章"><a href="#了解小鼠的来源、背景信息以及发表的文章" class="headerlink" title="了解小鼠的来源、背景信息以及发表的文章"></a>了解小鼠的来源、背景信息以及发表的文章</h5><p><a target="_blank" rel="noopener" href="http://www.creportal.org">Mouse Genome Informatics CrePortal</a></p>
+<p><a target="_blank" rel="noopener" href="http://www.informatics.jax.org/home/recombinase">http://www.informatics.jax.org/home/recombinase</a></p>
+<h5 id="建立基因型鉴定方法，确认小鼠正确"><a href="#建立基因型鉴定方法，确认小鼠正确" class="headerlink" title="建立基因型鉴定方法，确认小鼠正确"></a>建立基因型鉴定方法，确认小鼠正确</h5><p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/品系验证.png" alt="品系验证"></p>
+<h5 id="验证Cre在目标组织的表达和针对目的基因的敲除效率"><a href="#验证Cre在目标组织的表达和针对目的基因的敲除效率" class="headerlink" title="验证Cre在目标组织的表达和针对目的基因的敲除效率"></a>验证Cre在目标组织的表达和针对目的基因的敲除效率</h5><p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/Cre小鼠验证.png" alt="Cre小鼠验证"></p>
+<h4 id="2-2-Cre小鼠使用过程中的问题Ⅰ"><a href="#2-2-Cre小鼠使用过程中的问题Ⅰ" class="headerlink" title="2.2 Cre小鼠使用过程中的问题Ⅰ"></a>2.2 Cre小鼠使用过程中的问题Ⅰ</h4><p><strong>LoxP位点的重组效率：受Cre酶表达量影响；受基因位置，flox区域大小影响。</strong></p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/Cre小鼠使用问题1.png" alt="Cre小鼠使用问题1"></p>
+<blockquote>
+<p>EMBO reports vol. 2, no.4, pp 292-297，2001</p>
+</blockquote>
+<h4 id="2-3-Cre小鼠使用过程中的问题Ⅱ"><a href="#2-3-Cre小鼠使用过程中的问题Ⅱ" class="headerlink" title="2.3 Cre小鼠使用过程中的问题Ⅱ"></a>2.3 Cre小鼠使用过程中的问题Ⅱ</h4><p><strong>Cre1非特异性表达，在非目的组织中表达：用Reporter小鼠验证表达细胞组织类型；要特别关注生殖系统的非特异性表达。</strong></p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/Cre小鼠使用问题2.png" alt="Cre小鼠使用问题2"></p>
+<blockquote>
+<p>Nature communication、DOI:10.1038/ncomms2186</p>
+</blockquote>
+<p><strong>Cre在生殖系统漏表达，会产生KO小鼠。</strong></p>
+<blockquote>
+<p>Luo et al.,2020,Neuron 106,1-29</p>
+</blockquote>
+<h5 id="2-3-1-Cre在生殖系统漏表达，如何检测："><a href="#2-3-1-Cre在生殖系统漏表达，如何检测：" class="headerlink" title="2.3.1 Cre在生殖系统漏表达，如何检测："></a>2.3.1 Cre在生殖系统漏表达，如何检测：</h5><p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/Cre小鼠使用问题2-2.png" alt="Cre小鼠使用问题2-2"></p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/Cre小鼠使用问题2-3.png" alt="Cre小鼠使用问题2-3"></p>
+<p>引物对a+b可用于鉴定wt，flox；不好判断是否有KO发生（没有引物对去PCR KO基因，所以不确定是否产生了KO）。</p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/Cre小鼠使用问题2-4.png" alt="Cre小鼠使用问题2-4"></p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/Cre小鼠使用问题2-5.png" alt="Cre小鼠使用问题2-5"></p>
+<p>引物对a+b用于鉴定wt，flox；引物对a+c用于鉴定是否有KO发生。</p>
+<blockquote>
+<p>Trends Genet. 2018 May;34(5):333-340.doi:keycap_ten</p>
+<p>:.1016/j.tig.2017.12.008.</p>
+</blockquote>
+<h5 id="2-3-2-Cre在生殖系统漏表达，繁育策略："><a href="#2-3-2-Cre在生殖系统漏表达，繁育策略：" class="headerlink" title="2.3.2 Cre在生殖系统漏表达，繁育策略："></a>2.3.2 Cre在生殖系统漏表达，繁育策略：</h5><p>尽量避免用生殖系统漏表达Cre性别的Cre阳性/flox小鼠进行繁育：如雄性生殖系统漏表达，</p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/繁育策略.png" alt="繁育策略"></p>
+<h4 id="2-4-Cre小鼠使用过程中的问题Ⅲ"><a href="#2-4-Cre小鼠使用过程中的问题Ⅲ" class="headerlink" title="2.4 Cre小鼠使用过程中的问题Ⅲ"></a>2.4 Cre小鼠使用过程中的问题Ⅲ</h4><p>可以利用flox小鼠，产生一个全身敲除小鼠</p>
+<p>利用生殖系统，或者胚胎发育早期的表达的Cre品系</p>
+<p>常用的Dppa3-Cre；Ddx4-Cre；Zp3-Cre等。</p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/Cre小鼠使用问题3.png" alt="Cre小鼠使用问题3"></p>
+<h4 id="2-5-Cre小鼠使用过程中的问题Ⅳ"><a href="#2-5-Cre小鼠使用过程中的问题Ⅳ" class="headerlink" title="2.5 Cre小鼠使用过程中的问题Ⅳ"></a>2.5 Cre小鼠使用过程中的问题Ⅳ</h4><p><strong>Cre所在染色体位置需要关注：避免和flox基因位于同一条染色体。</strong></p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/Cre小鼠使用问题4.png" alt="Cre小鼠使用问题4"></p>
+<h4 id="2-6-Cre小鼠使用过程中的问题Ⅴ"><a href="#2-6-Cre小鼠使用过程中的问题Ⅴ" class="headerlink" title="2.6 Cre小鼠使用过程中的问题Ⅴ"></a>2.6 Cre小鼠使用过程中的问题Ⅴ</h4><p>Cre作用的Mosaic情况</p>
+<p>在一些目的细胞中Cre没有发挥作用，或者表达</p>
+<p>可能是因为位点的影响等原因，转基因要进行多个founder筛选。</p>
+<blockquote>
+<p>Developmental Biology 321 (2008) 77-87</p>
+</blockquote>
+<h4 id="2-7-Cre小鼠使用过程中的问题Ⅵ"><a href="#2-7-Cre小鼠使用过程中的问题Ⅵ" class="headerlink" title="2.7 Cre小鼠使用过程中的问题Ⅵ"></a>2.7 Cre小鼠使用过程中的问题Ⅵ</h4><p>通常<strong>杂合子小鼠Cre表达量已足够重组</strong>；纯合子Cre插入位点不确定，可能导致非预期表型。</p>
+<h4 id="2-8-Cre小鼠使用过程中的问题Ⅶ"><a href="#2-8-Cre小鼠使用过程中的问题Ⅶ" class="headerlink" title="2.8 Cre小鼠使用过程中的问题Ⅶ"></a>2.8 Cre小鼠使用过程中的问题Ⅶ</h4><p>Cre小鼠可能有表型</p>
+<p>Cre”毒性“问题；</p>
+<p>Cre影响内源基因表达。</p>
+<blockquote>
+<p>PANS,December 5, 2000, vol.97,no.25, 13702-13707</p>
+</blockquote>
+<h4 id="2-9-Cre小鼠使用过程中的问题Ⅷ"><a href="#2-9-Cre小鼠使用过程中的问题Ⅷ" class="headerlink" title="2.9 Cre小鼠使用过程中的问题Ⅷ"></a>2.9 Cre小鼠使用过程中的问题Ⅷ</h4><p>CreERᵀ²漏表达问题</p>
+<p>CreERᵀ²高表达易造成Cre活性泄露</p>
+<p>C57BL/6-CAG-CreERᵀ²；B6.Cg-Tg(UBC-CreERᵀ²)1Ejb/J(008085)</p>
+<p>漏表达对于谱系示踪影响很大。</p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/Cre小鼠使用问题8.png" alt="Cre小鼠使用问题8"></p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/Cre小鼠使用问题8-2.png" alt="Cre小鼠使用问题8-2"></p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/Cre小鼠使用问题8-3.png" alt="Cre小鼠使用问题8-3"></p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/Cre小鼠使用问题8-4.png" alt="Cre小鼠使用问题8-4"></p>
+<blockquote>
+<p>Transgenic Res(2020) 29:53-68</p>
+</blockquote>
+<h4 id="2-10-Cre小鼠使用过程中的问题Ⅸ"><a href="#2-10-Cre小鼠使用过程中的问题Ⅸ" class="headerlink" title="2.10 Cre小鼠使用过程中的问题Ⅸ"></a>2.10 Cre小鼠使用过程中的问题Ⅸ</h4><p><strong>LoxP位点位置对目的基因表达的影响：LoxP的插入应不影响基因的正常表达。</strong></p>
+<p>设计原则：</p>
+<p>敲除尽量靠前的导致移码的exon；</p>
+<p>如果移码突变不可行，考虑敲除关键结构域；</p>
+<p>避免对调控区域进行改造；</p>
+<p>避免影响剪切位点；</p>
+<p>尽量在大的intron里面进行设计操作。</p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/Cre小鼠使用问题9.png" alt="Cre小鼠使用问题9"></p>
+<h3 id="三、Cre工具鼠构建需要考虑的问题"><a href="#三、Cre工具鼠构建需要考虑的问题" class="headerlink" title="三、Cre工具鼠构建需要考虑的问题"></a>三、Cre工具鼠构建需要考虑的问题</h3><h4 id="3-1-Cre-or-CreERᵀ²"><a href="#3-1-Cre-or-CreERᵀ²" class="headerlink" title="3.1 Cre or CreERᵀ²"></a>3.1 Cre or CreERᵀ²</h4><ul>
+<li><p>Cre不可诱导，敲除时间不可控；CreERᵀ²可诱导，特定时间敲除；</p>
+</li>
+<li><p>观察到的Cre和CreERᵀ²的结果来源不同；</p>
+</li>
+<li><p>Cre的剪切效率比CreERᵀ²高；</p>
+</li>
+<li><p>CreERᵀ²的特异性比Cre好；</p>
+</li>
+<li><p>CreERᵀ² leaky的问题；</p>
+</li>
+<li><p>CreERᵀ²可以用于谱系示踪研究</p>
+</li>
+</ul>
+<p>取决于用途。</p>
+<h5 id="3-1-1-观察到的Cre和CreERᵀ²的结果来源不同"><a href="#3-1-1-观察到的Cre和CreERᵀ²的结果来源不同" class="headerlink" title="3.1.1 观察到的Cre和CreERᵀ²的结果来源不同"></a>3.1.1 观察到的Cre和CreERᵀ²的结果来源不同</h5><ul>
+<li><p>Cre作用的时间点不可控，基因敲除的作用可能发生在发育早期或非预期的实验时间窗。</p>
+<ul>
+<li>Cre的作用是一次性的，一旦被标记，子细胞都会被标记。</li>
+</ul>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/software\OneDrive\文档\博客\Cre-loxP系统介绍及使用问题\Cre作用时间.png" alt="Cre作用时间"></p>
+<ul>
+<li>Cre的结果源自从受精卵到观察时间点的积累</li>
+</ul>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/software\OneDrive\文档\博客\Cre-loxP系统介绍及使用问题\Cre的结果.png" alt="Cre的结果"></p>
+</li>
+</ul>
+<ul>
+<li><p>CreERᵀ²的结果直接取决于tamoxifen诱导时间窗口的基因表达情况</p>
+<ul>
+<li><p>CreERᵀ²可诱导调控原理示意：</p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/software\OneDrive\文档\博客\Cre-loxP系统介绍及使用问题\CreER的结果.png" alt="CreER的结果"></p>
+</li>
+<li><p>CreERᵀ²策略细胞标记小鼠流程示意：</p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/software\OneDrive\文档\博客\Cre-loxP系统介绍及使用问题\CreER的结果2.png" alt="CreER的结果2"></p>
+</li>
+<li><p>CreERᵀ²策略标记的细胞谱系示意图</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/software\OneDrive\文档\博客\Cre-loxP系统介绍及使用问题\CreER的结果3.png" alt="CreER的结果3"></p>
+<h5 id="3-1-2-Cre的剪切效率比CreERᵀ²高"><a href="#3-1-2-Cre的剪切效率比CreERᵀ²高" class="headerlink" title="3.1.2 Cre的剪切效率比CreERᵀ²高"></a>3.1.2 Cre的剪切效率比CreERᵀ²高</h5><p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/software\OneDrive\文档\博客\Cre-loxP系统介绍及使用问题\Cre的剪切效率.png" alt="Cre的剪切效率"></p>
+<blockquote>
+<p>The EMBO Journal(2020) 39.e102675</p>
+</blockquote>
+<h5 id="3-1-3-CreERᵀ²的特异性比Cre好"><a href="#3-1-3-CreERᵀ²的特异性比Cre好" class="headerlink" title="3.1.3 CreERᵀ²的特异性比Cre好"></a>3.1.3 CreERᵀ²的特异性比Cre好</h5><p>Ncr1-2A-Cre / Ncr1-2A-CreERᵀ² × Rosa-CAG-LSL-tdTomato小鼠</p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/software\OneDrive\文档\博客\Cre-loxP系统介绍及使用问题\CreER的特异性.png" alt="CreER的特异性"></p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/software\OneDrive\文档\博客\Cre-loxP系统介绍及使用问题\CreER的特异性2.png" alt="CreER的特异性2"></p>
+<h5 id="3-1-4-CreERᵀ²-leaky的问题"><a href="#3-1-4-CreERᵀ²-leaky的问题" class="headerlink" title="3.1.4 CreERᵀ² leaky的问题"></a>3.1.4 CreERᵀ² leaky的问题</h5><p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/software\OneDrive\文档\博客\Cre-loxP系统介绍及使用问题\CreER leaky.png" alt="CreER leaky"></p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/software\OneDrive\文档\博客\Cre-loxP系统介绍及使用问题\CreER leaky2.png" alt="CreER leaky2"></p>
+<h4 id="3-2-Cre-CreERᵀ²插入在什么位置"><a href="#3-2-Cre-CreERᵀ²插入在什么位置" class="headerlink" title="3.2 Cre/CreERᵀ²插入在什么位置"></a>3.2 Cre/CreERᵀ²插入在什么位置</h4><h5 id="3-2-1-策略一：敲入ATG位置示意"><a href="#3-2-1-策略一：敲入ATG位置示意" class="headerlink" title="3.2.1 策略一：敲入ATG位置示意"></a>3.2.1 策略一：敲入ATG位置示意</h5><p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/software\OneDrive\文档\博客\Cre-loxP系统介绍及使用问题\敲入位置1.png" alt="敲入位置1"></p>
+<h5 id="3-2-2-策略二：敲入终止密码子前位置示意"><a href="#3-2-2-策略二：敲入终止密码子前位置示意" class="headerlink" title="3.2.2 策略二：敲入终止密码子前位置示意"></a>3.2.2 策略二：敲入终止密码子前位置示意</h5><p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/software\OneDrive\文档\博客\Cre-loxP系统介绍及使用问题\敲入位置2.png" alt="敲入位置2"></p>
+<h4 id="3-3-采用何种连接策略"><a href="#3-3-采用何种连接策略" class="headerlink" title="3.3 采用何种连接策略"></a>3.3 采用何种连接策略</h4><p><strong>保留内源蛋白情况下，采用何种连接策略：IRES or 2A。</strong></p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/software\OneDrive\文档\博客\Cre-loxP系统介绍及使用问题\IRES or 2A 2.png" alt="IRES or 2A 2"></p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/software\OneDrive\文档\博客\Cre-loxP系统介绍及使用问题\IRES or 2A 3.png" alt="IRES or 2A 3"></p>
+<p><img src="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/software\OneDrive\文档\博客\Cre-loxP系统介绍及使用问题\IRES or 2A.png" alt="IRES or 2A"></p>
+<blockquote>
+<p>PloS ONE 6(12):e2885. <a target="_blank" rel="noopener" href="https://doi.org/10.1371/journal.pone.0028885">https://doi.org/10.1371/journal.pone.0028885</a></p>
+</blockquote>
+
+                      
+
+                        
+        </div>
+        <div class="article-info article-info-index">
+          
+              
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">基础医学</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+                
+
+                  
+                    <p class="article-more-link">
+                      <a class="article-more-a" href="/2021/09/22/Cre-loxP%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/">
+                        展开全文 >>
+                      </a>
+                    </p>
+                    
+
+                      
+                            <div class="clearfix"></div>
+        </div>
+  </div>
+</article>
+
+      <aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+        
+  
     <article id="post-AHR信号→效应细胞免疫→自身免疫性肝炎"
   class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -190,7 +509,7 @@
           
             <blockquote>
 <p>三元变量论证（分子+分子+分子）</p>
-<p>Title: MicroRNA-17-5p Reduces Inflammation and Bone Erosions in Mice With Collagen-Induced Arthritis and Directly Targets the JAK/STAT Pathway in Rheumatoid Arthritis Fibroblast-like Synoviocytes</p>
+<p>Title: Altered aryl-hydrocarbon-receptor signalling affects regulatory and<br>effector cell immunity in autoimmune hepatitis</p>
 <p>IF: 25.084</p>
 </blockquote>
               
@@ -1056,113 +1375,6 @@
                   
                     <p class="article-more-link">
                       <a class="article-more-a" href="/2021/08/19/miR-520f-3p%E2%86%92SOX9%EF%BC%8CWnt%CE%B2-catenin%E2%86%92%E8%82%BF%E7%98%A4%E5%A2%9E%E6%AE%96%E2%86%92%E8%83%83%E7%99%8C/">
-                        展开全文 >>
-                      </a>
-                    </p>
-                    
-
-                      
-                            <div class="clearfix"></div>
-        </div>
-  </div>
-</article>
-
-      <aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-        
-  
-    <article id="post-LncRNA H19→mCDH1→肿瘤增殖、EMT→肺肿瘤"
-  class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/08/19/LncRNA%20H19%E2%86%92mCDH1%E2%86%92%E8%82%BF%E7%98%A4%E5%A2%9E%E6%AE%96%E3%80%81EMT%E2%86%92%E8%82%BA%E8%82%BF%E7%98%A4/">LncRNA H19→mCDH1→肿瘤增殖、EMT→肺肿瘤</a>
-    </h1>
-  
-
-          
-            <a href="/2021/08/19/LncRNA%20H19%E2%86%92mCDH1%E2%86%92%E8%82%BF%E7%98%A4%E5%A2%9E%E6%AE%96%E3%80%81EMT%E2%86%92%E8%82%BA%E8%82%BF%E7%98%A4/" class="archive-article-date">
-  	<time datetime="2021-08-19T01:30:45.078Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-19</time>
-</a>
-              <!-- 需要添加的位置 -->
-              <!-- 开始添加字数统计-->
-              
-                <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">2.2k字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">8分</span>
-      </span>
-    </span>
-</div>
-                  
-                    <!-- 添加完成 -->
-                    
-      </header>
-      
-        <div class="article-entry" itemprop="articleBody">
-          
-            <blockquote>
-<p>二元交互论证（分子+分子）</p>
-<p>Title: Long non-coding RNA H19 is responsible for the progression of lung adenocarcinoma by mediating methylation-dependent repression of CDH1 promoter</p>
-<p>IF: 5.313</p>
-</blockquote>
-              
-                  
-
-                        
-        </div>
-        <div class="article-info article-info-index">
-          
-              
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">基础医学</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-                
-
-                  
-                    <p class="article-more-link">
-                      <a class="article-more-a" href="/2021/08/19/LncRNA%20H19%E2%86%92mCDH1%E2%86%92%E8%82%BF%E7%98%A4%E5%A2%9E%E6%AE%96%E3%80%81EMT%E2%86%92%E8%82%BA%E8%82%BF%E7%98%A4/">
                         展开全文 >>
                       </a>
                     </p>
