@@ -168,7 +168,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">2.6k字</span>
+        <span class="post-count">2.5k字</span>
       </span>
     </span>
 
@@ -318,6 +318,140 @@
                   
                     <p class="article-more-link">
                       <a class="article-more-a" href="/2021/12/31/2021%E5%B9%B4/">
+                        展开全文 >>
+                      </a>
+                    </p>
+                    
+
+                      
+                            <div class="clearfix"></div>
+        </div>
+  </div>
+</article>
+
+      <aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+        
+  
+    <article id="post-利用NCBI进行RT-qPCR引物设计"
+  class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/12/13/%E5%88%A9%E7%94%A8NCBI%E8%BF%9B%E8%A1%8CRT-qPCR%E5%BC%95%E7%89%A9%E8%AE%BE%E8%AE%A1/">利用NCBI进行RT-qPCR引物设计</a>
+    </h1>
+  
+
+          
+            <a href="/2021/12/13/%E5%88%A9%E7%94%A8NCBI%E8%BF%9B%E8%A1%8CRT-qPCR%E5%BC%95%E7%89%A9%E8%AE%BE%E8%AE%A1/" class="archive-article-date">
+  	<time datetime="2021-12-13T02:07:55.902Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-13</time>
+</a>
+              <!-- 需要添加的位置 -->
+              <!-- 开始添加字数统计-->
+              
+                <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">624字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">2分</span>
+      </span>
+    </span>
+</div>
+                  
+                    <!-- 添加完成 -->
+                    
+      </header>
+      
+        <div class="article-entry" itemprop="articleBody">
+          
+                    <blockquote>
+<p>人PRDM1引物设计为例，后续用于RT-qPCR实验。</p>
+</blockquote>
+<h5 id="一、查看转录本信息"><a href="#一、查看转录本信息" class="headerlink" title="一、查看转录本信息"></a>一、查看转录本信息</h5><p>1.进入<a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/">NCBI</a>网站，选择<code>Nucleotide</code>，搜索框输入<code>PRDM1</code>。</p>
+<p><img src="/2021/12/13/%E5%88%A9%E7%94%A8NCBI%E8%BF%9B%E8%A1%8CRT-qPCR%E5%BC%95%E7%89%A9%E8%AE%BE%E8%AE%A1/image-20211213090139495.png" alt="image-20211213090139495" style="zoom:67%;"></p>
+<p>2.选中<code>Homo sapiens</code></p>
+<p><img src="/2021/12/13/%E5%88%A9%E7%94%A8NCBI%E8%BF%9B%E8%A1%8CRT-qPCR%E5%BC%95%E7%89%A9%E8%AE%BE%E8%AE%A1/image-20211213090310300.png" alt="image-20211213090310300" style="zoom:67%;"></p>
+<p>3.词条带“PREDICTED”一律不考虑，那么此搜索有3个结果，注意观察词条是mRNA还是DNA，因为我们后续实验是RT-qPCR，只选择mRNA。</p>
+<p><img src="/2021/12/13/%E5%88%A9%E7%94%A8NCBI%E8%BF%9B%E8%A1%8CRT-qPCR%E5%BC%95%E7%89%A9%E8%AE%BE%E8%AE%A1/image-20211213090736279.png" alt="image-20211213090736279" style="zoom:67%;"></p>
+<p>4.点击词条1<code>Homo sapiens truncated PRDM1 isoform 2(PRDM1) mRNA,complete cds</code>，查看CDS。</p>
+<p>发现此转录本的CDS极短，不合适，因为引物就是在CDS序列中产生，极短的CDS序列也许无法产生引物，也许能产生引物但是PCR产物长度不够，总之不合适，因此不考虑此转录本。</p>
+<p><img src="/2021/12/13/%E5%88%A9%E7%94%A8NCBI%E8%BF%9B%E8%A1%8CRT-qPCR%E5%BC%95%E7%89%A9%E8%AE%BE%E8%AE%A1/image-20211213090853314.png" alt="image-20211213090853314"></p>
+<p>5.点击词条2<code>Homo sapiens PR/SET domain 1(PRDM1),transcript variant2,mRNA</code>，查看CDS。</p>
+<p>结果合适。</p>
+<p><img src="/2021/12/13/%E5%88%A9%E7%94%A8NCBI%E8%BF%9B%E8%A1%8CRT-qPCR%E5%BC%95%E7%89%A9%E8%AE%BE%E8%AE%A1/image-20211213091017146.png" alt="image-20211213091017146"></p>
+<h5 id="二、设计引物"><a href="#二、设计引物" class="headerlink" title="二、设计引物"></a>二、设计引物</h5><p>6.点击同界面右边的<code>Pick Primers</code>，跳转到引物设计界面。</p>
+<p><img src="/2021/12/13/%E5%88%A9%E7%94%A8NCBI%E8%BF%9B%E8%A1%8CRT-qPCR%E5%BC%95%E7%89%A9%E8%AE%BE%E8%AE%A1/image-20211213091054652.png" alt="image-20211213091054652" style="zoom:67%;"></p>
+<p>7.引物设计PCR产物是80-800，Tm可以默认，因为我们之前引物的Tm在53-58℃，所以这里最小设置为52℃。<strong>引物跨越外显子必须选择。</strong></p>
+<p><img src="/2021/12/13/%E5%88%A9%E7%94%A8NCBI%E8%BF%9B%E8%A1%8CRT-qPCR%E5%BC%95%E7%89%A9%E8%AE%BE%E8%AE%A1/image-20211213091151948.png" alt="image-20211213091151948" style="zoom:67%;"></p>
+<p>8.为引物位置图，可以看到所有引物都是跨越外显子的。</p>
+<p><img src="/2021/12/13/%E5%88%A9%E7%94%A8NCBI%E8%BF%9B%E8%A1%8CRT-qPCR%E5%BC%95%E7%89%A9%E8%AE%BE%E8%AE%A1/image-20211213091434495.png" alt="image-20211213091434495" style="zoom: 50%;"></p>
+<p>8.查看每对引物的具体信息。</p>
+<blockquote>
+<ul>
+<li><p>序列3’端不能有A，最好是G</p>
+</li>
+<li><p>引物长度20bp左右</p>
+</li>
+<li>GC含量40-60%</li>
+<li>避免出现连续4个相同碱基</li>
+<li>Self complementarity与Self 3‘ complementarity的值越小越好</li>
+<li>上下游引物Tm值接近</li>
+<li>注意观察<code>Products on intended targets</code>与<code>Products on potentially unintended templates</code>的结果，带“PREDICTED”可以不考虑，尽量不要出现其它基因的产物，尤其在<code>Products on intended targets</code>这个结果中。</li>
+</ul>
+</blockquote>
+<p><img src="/2021/12/13/%E5%88%A9%E7%94%A8NCBI%E8%BF%9B%E8%A1%8CRT-qPCR%E5%BC%95%E7%89%A9%E8%AE%BE%E8%AE%A1/image-20211213091317816.png" alt="image-20211213091317816" style="zoom: 50%;"></p>
+<p>9.经过对词条3<code>Homo sapiens PR/SET domain 1(PRDM1),transcript variant1,mRNA</code>同样的操作，最终选择根据<code>Homo sapiens PR/SET domain 1(PRDM1),transcript variant2,mRNA</code>设计的其中一条引物。</p>
+<p><img src="/2021/12/13/%E5%88%A9%E7%94%A8NCBI%E8%BF%9B%E8%A1%8CRT-qPCR%E5%BC%95%E7%89%A9%E8%AE%BE%E8%AE%A1/image-20211213095455362.png" alt="image-20211213095455362" style="zoom: 50%;"></p>
+<h5 id="三、查看引物特异性"><a href="#三、查看引物特异性" class="headerlink" title="三、查看引物特异性"></a>三、查看引物特异性</h5><p>10.验证引物特异性blast</p>
+<p>把引物序列信息输入下图红框中，点击<code>Get Primers</code>。</p>
+<p><img src="/2021/12/13/%E5%88%A9%E7%94%A8NCBI%E8%BF%9B%E8%A1%8CRT-qPCR%E5%BC%95%E7%89%A9%E8%AE%BE%E8%AE%A1/image-20211213095730952.png" alt="image-20211213095730952" style="zoom:67%;"></p>
+<p>11.得到如图信息，可以看到是可以保证特异性的。</p>
+<p>结果其实跟第<code>9</code>步的图是一样的，因为我用的就是第<code>9</code>步产生的引物去<code>blast</code>。</p>
+<p>当我们在文献中找到待选的引物，可以用<code>blast</code>查看一下引物特异性。</p>
+<p><img src="/2021/12/13/%E5%88%A9%E7%94%A8NCBI%E8%BF%9B%E8%A1%8CRT-qPCR%E5%BC%95%E7%89%A9%E8%AE%BE%E8%AE%A1/image-20211213095911648.png" alt="image-20211213095911648" style="zoom: 50%;"></p>
+<h5 id="四、引物的扩增效率"><a href="#四、引物的扩增效率" class="headerlink" title="四、引物的扩增效率"></a>四、引物的扩增效率</h5><p>新的引物还需要验证，就需要评估引物的扩增效率。可以采用标准曲线的方式。</p>
+<p>参见资料：<a target="_blank" rel="noopener" href="http://www.360doc.com/content/18/1208/11/52645714_800175475.shtml">荧光定量PCR之引物扩增效率</a>。</p>
+
+                      
+
+                        
+        </div>
+        <div class="article-info article-info-index">
+          
+              
+                
+
+                  
+                    <p class="article-more-link">
+                      <a class="article-more-a" href="/2021/12/13/%E5%88%A9%E7%94%A8NCBI%E8%BF%9B%E8%A1%8CRT-qPCR%E5%BC%95%E7%89%A9%E8%AE%BE%E8%AE%A1/">
                         展开全文 >>
                       </a>
                     </p>
@@ -1043,107 +1177,6 @@
                   
                     <p class="article-more-link">
                       <a class="article-more-a" href="/2021/11/05/IgGIFN%CE%B12%E2%86%92CaMK4%E2%86%92CREM%CE%B1%E2%86%92GPX4%E2%86%92%E4%B8%AD%E6%80%A7%E7%B2%92%E9%93%81%E6%AD%BB%E4%BA%A1%E2%86%92SLE/">
-                        展开全文 >>
-                      </a>
-                    </p>
-                    
-
-                      
-                            <div class="clearfix"></div>
-        </div>
-  </div>
-</article>
-
-      <aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-        
-  
-    <article id="post-十一假期"
-  class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/10/10/%E5%8D%81%E4%B8%80%E5%81%87%E6%9C%9F/">十一假期</a>
-    </h1>
-  
-
-          
-            <a href="/2021/10/10/%E5%8D%81%E4%B8%80%E5%81%87%E6%9C%9F/" class="archive-article-date">
-  	<time datetime="2021-10-10T02:09:50.796Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-10</time>
-</a>
-              <!-- 需要添加的位置 -->
-              <!-- 开始添加字数统计-->
-              
-                <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">388字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">1分</span>
-      </span>
-    </span>
-</div>
-                  
-                    <!-- 添加完成 -->
-                    
-      </header>
-      
-        <div class="article-entry" itemprop="articleBody">
-          
-            <blockquote>
-<p>当春节过。</p>
-</blockquote>
-              
-                  
-
-                        
-        </div>
-        <div class="article-info article-info-index">
-          
-              
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">碎碎念</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-                
-
-                  
-                    <p class="article-more-link">
-                      <a class="article-more-a" href="/2021/10/10/%E5%8D%81%E4%B8%80%E5%81%87%E6%9C%9F/">
                         展开全文 >>
                       </a>
                     </p>
