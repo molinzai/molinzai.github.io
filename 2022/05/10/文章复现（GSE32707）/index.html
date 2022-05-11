@@ -34,7 +34,7 @@
 <meta property="og:image" content="http://molinzai.github.io/2022/05/10/%E6%96%87%E7%AB%A0%E5%A4%8D%E7%8E%B0%EF%BC%88GSE32707%EF%BC%89/图9.png">
 <meta property="og:image" content="http://molinzai.github.io/2022/05/10/%E6%96%87%E7%AB%A0%E5%A4%8D%E7%8E%B0%EF%BC%88GSE32707%EF%BC%89/流程图.png">
 <meta property="article:published_time" content="2022-05-10T05:01:46.085Z">
-<meta property="article:modified_time" content="2022-05-10T12:32:21.208Z">
+<meta property="article:modified_time" content="2022-05-10T23:36:22.011Z">
 <meta property="article:author" content="Molinzai">
 <meta property="article:tag" content="生信分析">
 <meta name="twitter:card" content="summary">
@@ -266,6 +266,9 @@
 <h6 id="3-8-1-第一步：整理表达矩阵"><a href="#3-8-1-第一步：整理表达矩阵" class="headerlink" title="3.8.1 第一步：整理表达矩阵"></a>3.8.1 第一步：整理表达矩阵</h6><p>下载<code>GSE32702_series_ matrix.txt.gz</code>，解压后删除平台信息，删除本文中没有用到的样本表达量信息，即本文只用31个ce/ADRs和34个HC样本的表达量信息。表达矩阵中并没有<code>gene_symbol</code>，只有<code>ID_REF</code>而进行免疫浸润分析时需要<code>gene_symbol</code>。<code>GER2R</code>分析结果既有<code>gene_symbol</code>又有<code>ID_REF</code>。将表达矩阵和<code>GEO2R</code>分析结果均按照<code>ID_REF</code>从小到大排列，将<code>GEO2R</code>分析结果的<code>gene_symbol</code>复制到表达矩阵中。在表达矩阵中删除<code>ID_REF</code>列，并删除没有<code>gene_symbol</code>却有表达量的数据，确保表达矩阵没有缺失值。即整理成下图形式</p>
 <p><img src="/2022/05/10/%E6%96%87%E7%AB%A0%E5%A4%8D%E7%8E%B0%EF%BC%88GSE32707%EF%BC%89/图8-1.png" alt="图8-1" style="zoom: 33%;"></p>
 <p>将此表达导出<code>.txt</code>格式的文本文件，要求”制表符分隔“。</p>
+<blockquote>
+<p><code>gene_symbol</code>与<code>ID_REF</code>进阶版：使用<code>Excel</code>的<code>VLOOKUP</code>函数。</p>
+</blockquote>
 <h6 id="3-8-2-第二步：CIBERSORTX分析"><a href="#3-8-2-第二步：CIBERSORTX分析" class="headerlink" title="3.8.2 第二步：CIBERSORTX分析"></a>3.8.2 第二步：CIBERSORTX分析</h6><p>进入<code>CIBERSORTX</code>官网（<strong><a target="_blank" rel="noopener" href="https://cibersortx.stanford.edu/index.php">https://cibersortx.stanford.edu/index.php</a></strong>），用教育邮箱注册账号。</p>
 <ul>
 <li><p>点击<code>Menu-Upload Files</code>进行上传表达矩阵工作。</p>
@@ -397,6 +400,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2022/05/11/%E6%96%87%E7%AB%A0%E5%A4%8D%E7%8E%B0(GSE30999%E7%AD%89)/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          文章复现(GSE30999等)
+        
+      </div>
+    </a>
   
   
     <a href="/2022/03/09/Perk%E2%86%92Chop%E2%86%92T-bet%E2%86%92CD8+%20TIL%E6%B4%BB%E6%80%A7%E2%86%92%E8%82%BF%E7%98%A4/" id="article-nav-older" class="article-nav-link-wrap">
